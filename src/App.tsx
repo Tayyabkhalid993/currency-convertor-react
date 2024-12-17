@@ -49,7 +49,7 @@ function App() {
           <h1 className=''>Currency Convertor</h1>
         </div>
 
-        <div className='flex justify-between items-center mt-6 m-x2 sm:m-x8'>
+        <div className='flex justify-between items-center mt-20 m-x2 sm:m-x8'>
 
           <form
             onSubmit={(e) => {
@@ -76,11 +76,11 @@ function App() {
 
 
 
-              <div className="w-full my-5 text-center sm:hidden">
+              <div className="w-full my-1 text-center sm:hidden">
                 <button
                   type="button"
                   onClick={swap}
-                  className='h-10 w-10'
+                  className='h-5 w-5'
                 >
                  <IoSwapVertical 
                  height={15}
@@ -153,170 +153,3 @@ export default App;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-      <div className="max-w-[1200px] max-h-[1200px]">
-            <h1 className="text-4xl tracking-[7px]">Currency Converter</h1>
-        <section className="flex h-screen justify-between sm:flex sm:justify-around items-center w-full space-x-10">
-          // Left Side 
-          <div className="hidden md:block">
-          </div>
-
-          // Right Side 
-          <div>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                convert();
-              }}
-            >
-              <div className="w-full mb-1">
-                <InputBox
-                  label={`From (${fromCurrencySymbol})`}
-                  amount={amount}
-                  onAmountChange={(value) => setAmount(value)}
-                  onCurrencyChange={(currency) => setFromCurrency(currency)}
-                  currencyOption={options}
-                  selectCurrency={fromCurrency}
-                />
-              </div>
-              <div className="relative w-full h-0.5">
-                <button
-                  type="button"
-                  className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
-                  onClick={swap}
-                >
-                  Swap
-                </button>
-              </div>
-              <div className="w-full mt-1 mb-4">
-                <InputBox
-                  label={`To (${toCurrencySymbol})`}
-                  amount={convertedAmount}
-                  onCurrencyChange={(currency) => setToCurrency(currency)}
-                  currencyOption={options}
-                  selectCurrency={toCurrency}
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
-              >
-                Convert {fromCurrency.toUpperCase()} to {toCurrency.toUpperCase()}
-              </button>
-            </form>
-          </div>
-        </section>
-
-        // Render Chart 
-        
-        <div className="mt-10">
-          <Chart currency={chartCurrency}/>
-        </div>
-      </div> */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- 
-<div className="w-full h-screen flex justify-center items-center"
-style={{
-  background: "linear-gradient(to right top, #ff9a8b, #ff6a88)", // Light red (#ffc1c1) to dark red (#8b0000)
-}}>
-  <p>
-Convert from {fromCurrencySymbol} {fromCurrency} to {toCurrencySymbol} {toCurrency}
-</p>
-
-  <div  className=" max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
-  <h1 className='roboto text-5xl tracking-[10px]'>Currency Convertor</h1>
-  </div>
-  <div className='h-[300px] w-[2px] bg-slate-300'>
-  </div>
-  <div className="w-full border-cyan-200">
-    <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          convert();
-        }}
-      >
-        <div className="w-full mb-1">
-          <InputBox
-               label={`From (${fromCurrencySymbol})`}
-            amount={amount}
-            onAmountChange={(value) => setAmount(value)}
-            onCurrencyChange={(currency) => setFromCurrency(currency)}
-            currencyOption={options} // Pass currency options here
-            selectCurrency={fromCurrency}
-          />
-        </div>
-        <div className="relative w-full h-0.5">
-          <button
-            type="button"
-            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
-            onClick={swap}
-          >
-            Swap
-          </button>
-        </div>
-        <div className="w-full mt-1 mb-4">
-          <InputBox
-              label={`To (${toCurrencySymbol})`}
-            amount={convertedAmount}
-            onCurrencyChange={(currency) => setToCurrency(currency)}
-            currencyOption={options} // Pass currency options here
-            selectCurrency={toCurrency}
-          />
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
-        >
-          Convert {fromCurrency.toUpperCase()} to {toCurrency.toUpperCase()}
-        </button>
-      </form>
-    </div>
-  </div>
-</div>*/
